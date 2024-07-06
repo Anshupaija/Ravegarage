@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <!-- Google fonts api link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Cdn -->
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- CSS link index.css -->
+    <link rel="stylesheet" href="../CSS/services.css" />
+</head>
+
+<body>
+    <!------------------------HEADER---------------------->
+    <header class="header">
+        <nav class="nav-p1">
+            <div class="logo-header">
+                <img class="company-logo" src="../Assets/company-logo.png" alt="" />
+            </div>
+        </nav>
+        <nav class="nav-p2">
+            <div class="nav-s-p1">
+                <ul class="ul-header" type="none">
+                    <li class="nav-items">
+                        <a class="header-nav-link" href="./index.html">HOME
+                        </a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="header-nav-link" href="./services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="header-nav-link" href="./aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-items" data-bs-toggle="modal" data-bs-target="#contact">
+                        CONTACT US
+                    </li>
+                    <li class="nav-items" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                        LOG IN
+                    </li>
+                    <li class="nav-items last-nav">
+                        <a class="header-nav-link" href="../HTML/signup.html">SIGN IN </a>
+                    </li>
+                    <!-- Nav For Tab And Mobile -->
+                </ul>
+            </div>
+            <div class="nav-s-p2 bars">
+                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"></i>
+            </div>
+        </nav>
+        <!-- OFFCANVAS FOR MOBILE NAVIGATION -->
+        <div class="offcanvas offcanvas-start bg-black text-white" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close bg-white" aria-label="Close"
+                    data-bs-dismiss="offcanvas"></button>
+                <div class="img-inside-offcanvas d-flex justify-content-center align-items-center">
+                    <div class="image-container-offcanvas">
+                        <img class="company-logo" src="../Assets/company-logo.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="nav-items-canvas">
+                <div class="nav-item-c"><a class="nav-in-c" href="./index.html">HOME</a></div>
+                <div class="nav-item-c"><a class="nav-in-c" href="./services.html">SERVICES</a></div>
+                <div class="nav-item-c"><a class="nav-in-c" href="./aboutus.html">ABOUT US</a></div>
+                <div class="nav-item-c"><a class="nav-in-c" href="" data-bs-toggle="modal"
+                        data-bs-target="#contact">CONTACT US</a></div>
+                <div class="nav-item-c"><a class="nav-in-c" href="" data-bs-toggle="modal"
+                        data-bs-target="#loginmodal">LOG
+                        IN</a></div>
+                <div class="nav-item-c"><a class="nav-in-c" href="../HTML/signup.html">SIGN UP</a></div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <!-----------------------------------------MODALS FOR LOG IN AND SIGN UP----------------------------------------->
+        <!-----------------------MODAL LOG IN PAGE PAGE----------------------->
+        <div class="modal fade" id="loginmodal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <!-- LOG IN FORM MODAL SECTION -->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-4" id="exampleModalToggleLabel">Log In To Continue</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="form-group input-group-lg fs-5">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Enter Email" required>
+                            </div>
+                            <div class="form-group input-group-lg mt-3 mb-3 fs-5">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter Password"
+                                    required>
+                                <div id="passwordHelpBlock" class="form-text fs-6">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must
+                                    not contain spaces,
+                                    special characters, or emoji.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark text-white ps-4 pe-4" type="submit" data-bs-target="#thankyou"
+                            data-bs-toggle="modal">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOG IN FORM CONFIRM -->
+        <div class="modal fade" id="thankyou" aria-hidden="true" aria-labelledby="thankyou" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="thankyou">Done</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        Logged In Successfully...
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark text-white ps-3 pe-3 fs-5" data-bs-target="#loginmodal"
+                            data-bs-toggle="modal">Go Back</button>
+                        <form>
+                            <button class="btn btn-dark text-white ps-3 pe-3 fs-5" type="submit"
+                                data-bs-dismiss="modal">Confirm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------MODAL FOR CONTACT PAGE----------------------->
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-white text-black">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Our Official Contact number:</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="phone-number">+91 12345 54321</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Thank You</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MODAL FOR EMAIL SECTION-->
+        <div class="modal fade" id="Modalformail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Email Us</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name" value="info@ravegarage.com"
+                                    readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <input type="text" class="form-control" id="message-text" required>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services-r-1 -->
+        <section class="service-section">
+            <div class="service-car-service">
+                <div class="line-left"></div>
+                <div class="service-box-cs">Car Service</div>
+                <div class="line-right"></div>
+            </div>
+            <div class="service-detail">
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <div class="text-cs">Car Maintainance</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-droplet"></i></div>
+                    <div class="text-cs">Oil Change</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="text-cs">Diagnostics & Repairs</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-car-battery"></i></div>
+                    <div class="text-cs">Battery checkup</div>
+                </div>
+            </div>
+            <!-- Services-r-2 -->
+            <div class="service-car-service stwo">
+                <div class="line-left"></div>
+                <div class="service-box-cs">Car Rentals</div>
+                <div class="line-right"></div>
+            </div>
+            <div class="service-detail">
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-car"></i></div>
+                    <div class="text-cs">Best Car onboard</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-clock"></i></div>
+                    <div class="text-cs">On-time Availability</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text-cs">At Your Place</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="text-cs">Hourly Rates</div>
+                </div>
+            </div>
+            <div class="button-rent-car">
+                <button data-bs-toggle="modal" data-bs-target="#modal-rent">Rent a Car</button>
+                <!-- Button trigger modal -->
+                <!-- Modal For Rent a car-->
+                <div class="modal fade" id="modal-rent" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Rent a car and Get it on your
+                                    location:</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-text">Share Your Live Location to get car where you are:</div>
+                                <div class="button-c"><button class="bg-dark"><a
+                                            href="https://maps.google.com/maps/@37.0625,-95.677068,4z"><i
+                                                class="fa-solid fa-share"></i></a></button></div>
+                                <div class="or">
+                                    <div class="line-l"></div>
+                                    <div class="text-or">OR</div>
+                                    <div class="line-r"></div>
+                                </div>
+                                <div class="formofloc">
+                                    <form action="">
+                                        <input class="ip" type="textarea" placeholder="Enter Your Address" required>
+                                        <button type="submit" class="submit-button-loc">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="text-ftr">
+                                    <div class="txt">Our Agent Will Contact You soon...</div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services-r-3 -->
+
+            <div class="service-car-service sthree">
+                <div class="line-left"></div>
+                <div class="service-box-cs">Car Modification</div>
+                <div class="line-right"></div>
+            </div>
+            <div class="service-detail">
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                    <div class="text-cs">Custom Painting</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><img src="../Assets/new/engine.png" alt=""></div>
+                    <div class="text-cs">Engine Upgrade</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><img src="../Assets/new/new/car-tattoo-removebg-preview.png" alt=""></div>
+                    <div class="text-cs">Skin Design</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><img src="../Assets/new/new/ppf-removebg-preview.png" alt=""></div>
+                    <div class="text-cs">PPF Wrapping</div>
+                </div>
+            </div>
+            <!-- Services-r-4 -->
+
+            <div class="service-car-service sthree">
+                <div class="line-left"></div>
+                <div class="service-box-cs">Car Transport</div>
+                <div class="line-right"></div>
+            </div>
+            <div class="service-detail">
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-truck-moving"></i></div>
+                    <div class="text-cs">Car Shipping</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-car-burst"></i>
+                        <div class="line"></div>
+                    </div>
+                    <div class="text-cs">100% Safe Delivery</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-ship"></i></div>
+                    <div class="text-cs">Country-to-Country</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-dollar"></i></div>
+                    <div class="text-cs">On Per Kms</div>
+                </div>
+            </div>
+            <!-- Services-r-5 -->
+
+            <div class="service-car-service sthree">
+                <div class="line-left"></div>
+                <div class="service-box-cs">Other Services</div>
+                <div class="line-right"></div>
+            </div>
+            <div class="service-detail">
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-car"></i></div>
+                    <div class="text-cs">New Car Selling</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-file"></i></div>
+                    <div class="text-cs">Car Insurance</div>
+                </div>
+                <div class="box-cs-1">
+                    <div class="image-cs"><i class="fa-solid fa-headset"></i></div>
+                    <div class="text-cs">Car Consultation</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!----------------------FOOTER--------------------->
+    <footer>
+        <div class="footer-items-container">
+            <div class="footer-item">
+                <div class="heading-footer">Pages <div class="sideline"></div>
+                </div>
+                <div class="links"><a href="./index.html" class="link">Home</a></div>
+                <div class="links"><a href="./services.html" class="link">Services</a></div>
+                <div class="links"><a href="./aboutus.html" class="link">About Us</a></div>
+                <div class="links"><a href="#" class="link" data-bs-toggle="modal" data-bs-target="#contact">Contact
+                        Us</a></div>
+                <div class="links"><a href="#" class="link" data-bs-toggle="modal" data-bs-target="#loginmodal">Log
+                        In</a></div>
+                <div class="links"><a href="./signup.html" class="link">Sign Up</a></div>
+            </div>
+            <div class="footer-item">
+                <div class="heading-footer">Locations <div class="sideline"></div>
+                </div>
+                <div class="links"><a href="#" class="link">India</a></div>
+                <div class="links"><a href="#" class="link">America</a></div>
+                <div class="links"><a href="#" class="link">Africa</a></div>
+                <div class="links"><a href="#" class="link">UAE</a></div>
+                <div class="links"><a href="#" class="link">Canada</a></div>
+                <div class="links"><a href="#" class="link">UK</a></div>
+                <div class="links"><a href="#" class="link">Russia</a></div>
+            </div>
+            <div class="footer-item">
+                <div class="heading-footer lasttwo">For Partenership <div class="sideline"></div>
+                </div>
+                <div class="links"><a href="#" class="link">Investment</a></div>
+                <div class="links"><a href="#" class="link">Franchise</a></div>
+                <div class="links"><a href="#" class="link">Affiliate with us</a></div>
+                <div class="links"><a href="#" class="link">Become a Member</a></div>
+                <div class="links"><a href="#" class="link">Hiring</a></div>
+                <div class="links"><a href="#" class="link">Warehouse</a></div>
+            </div>
+            <div class="footer-item lastone">
+                <div class="heading-footer">For Inquiry <div class="sideline"></div>
+                </div>
+                <!--Modal for Contact Number -->
+                <div class="links"><a href="#" class="link" data-bs-toggle="modal" data-bs-target="#contact"><i
+                            class="fa-solid fa-phone"></i>Phone
+                        Number</a></div>
+                <div class="links" data-bs-toggle="modal" data-bs-target="#Modalformail"
+                    data-bs-whatever="@Info@ravegarage.com"><i class="fa-solid fa-envelope"></i>info@ravegarage.com
+                </div>
+                <div class="links"><a href="../HTML/terms&condition.html" class="link"><i
+                            class="fa-solid fa-handshake"></i>T&C</a></div>
+            </div>
+        </div>
+        </div>
+        <div class="s-heading">Our Social Media Handles:</div>
+        <div class="social-media">
+            <div class="icons-social-media"><a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="icons-social-media"><a href="https://twitter.com/?lang=en"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="icons-social-media"><a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="icons-social-media"><a href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="icons-social-media"><a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright-footer">© Copyright 2024.Ravegarage Pvt Ltd.All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>
+<!-- Bootstrap Script -->
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<!-- Jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Jquery script -->
+<script src="../JS/index.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".submit-button-loc").click(function () {
+            $(".txt").css({ "display": "flex" })
+        })
+    })
+</script>

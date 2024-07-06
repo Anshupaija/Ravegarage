@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************************************HEADER***********************************************/
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.header-nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-p1 {
+    height: 100px;
+    width: 170px;
+}
+
+.logo-header {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-logo {
+    height: 100%;
+    width: 100%;
+}
+
+/*NAV BAR FOR TAB AND MOBILE*/
+.nav-p2 {
+    display: flex;
+}
+
+.ul-header {
+    display: flex;
+}
+
+.nav-items {
+    height: 100px;
+    letter-spacing: 1px;
+    width: auto;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.header-nav-link {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.nav-items:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.nav-s-p2 {
+    height: 100px;
+    width: 80px;
+    font-size: 25px;
+    font-weight: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**********OFFCANVAS(SIDENAV FOR MOBILE AND TAB**********/
+#offcanvasExample {
+    width: 300px;
+}
+
+.offcanvas {
+    background-color: black;
+}
+
+.img-inside-offcanvas {
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.image-container-offcanvas {
+    height: 100px;
+    width: 170px;
+}
+
+.nav-items-canvas {
+    margin-right: auto;
+    margin-left: auto;
+    height: 400px;
+    width: 100%px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition-duration: 1.5s;
+}
+
+.nav-in-c {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 3s;
+    /* transition-timing-function: linear; */
+}
+
+.nav-item-c:hover {
+    transform: scale(0.95);
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+.modal {
+    font-family: "Montserrat", sans-serif
+}
+
+label {
+    font-weight: 500;
+}
+
+#message-text {
+    height: 70px;
+}
+
+/********************************************Section-1-aboutus***********************************/
+.section-aboutus-text {
+    margin-top: 100px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-blend-mode: overlay;
+    background-image: url("../Assets/new/bg-3.jpg");
+    width: 100%;
+}
+.heading{
+    margin-bottom: 50px;
+    font-size: 45px;
+    /* text-decoration: underline; */
+    opacity: 1;
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+.text-container {
+    height: 100%;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(0, 0, 0, 0.792);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.503); */
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    font-family: "Montserrat", sans-serif;
+}
+@keyframes heading {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+
+/********************************************SECTION-2********************************************/
+.section-2 {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-text-sec2 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.control-buttons {
+    display: none;
+    height: 60px;
+    width: 290px;
+}
+
+.carousel-control-prev-sec-2,
+.carousel-control-next-sec2 {
+    height: 60px;
+    width: 90px;
+    font-size: 40px;
+}
+
+.carousel-sec-2 {
+    border-radius: 20px;
+    height: auto;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.carousel-inner-sec-2 {
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.carousel-item-sec-2 {
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.carousel-item-sec-2:nth-child(1) {
+    background-image: url("../Assets/Logos-brands/ca-insurance.jpg");
+    color: white;
+    background-color: black;
+    background-blend-mode: overlay;
+    background-color: rgb(56, 56, 56);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item-sec-2:nth-child(2) {
+    background-image: url("../Assets/new-car.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(45, 45, 45);
+    background-blend-mode: overlay;
+    color: white;
+    font-weight: 500;
+    background-position: center;
+}
+
+.carousel-item-sec-2:nth-child(3) {
+    background-image: url("../Assets/car-service-org.jpeg");
+    background-blend-mode: overlay;
+    background-color: rgb(42, 42, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.carousel-item-sec-2:nth-child(4) {
+    background-image: url("../Assets/car-transport.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(42, 42, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.carousel-item-sec-2:nth-child(5) {
+    background-image: url("../Assets/car-consultation.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(42, 42, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.carousel-item-sec-2:nth-child(6) {
+    background-image: url("../Assets/car-rentals.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(42, 42, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.carousel-item-sec-2:nth-child(7) {
+    background-image: url("../Assets/car-modification.jpg");
+    background-blend-mode: overlay;
+    background-color: rgb(42, 42, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.detail-service {
+    margin-top: 0;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+.detailed-service {
+    margin-bottom: 25px;
+    font-family: "Lexend Exa", sans-serif;
+    letter-spacing: -3px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.button-container {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-knowmore {
+    height: 60px;
+    width: 250px;
+    border-radius: 50px;
+    background-color: rgb(4, 6, 59);
+    color: rgb(255, 255, 255);
+    font-family: "Lexend Exa", sans-serif;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.button-knowmore:hover {
+    background-color: rgb(255, 72, 72);
+    color: white;
+}
+/********************************************SECTION-LOCATIONS********************************************/
+.section-location-container{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.location-heading{
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.locations-container{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.locations-container>div{
+    height: 300px;
+    width: 320px;
+    background-color: rgba(49, 49, 49, 0.195);
+    border-radius: 20px;
+    /* border: 1px solid white; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+    transition-duration: .5s;
+    
+}
+.locations-container>div:hover{
+    transform: scale(1.05);
+}
+.image-country{
+    border-radius: 20px;
+    height: 200px;
+    width: 270px;
+    margin-bottom: 20px;
+    /* border: 1px solid wheat; */
+    object-fit: cover;
+}
+.image-country>img{
+    height: 100%;
+    width: 100%;
+    border-radius:20px ;
+}
+
+/********************************************SECTION-CLIENTS REVIEW********************************************/
+.section-4{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid black;
+    background-color:rgb(255, 255, 255);
+  }
+  .section-4-heading{
+    font-weight:600 ;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-family: "Montseraat",sans-serif;
+    margin-bottom: 50px;  
+  
+  }
+  .carousel-section-4{
+    background-color:whitesmoke ;
+    position: relative;
+    margin-top: 0;
+    margin: auto;
+    height: auto;
+    width: 60%;
+    border-radius: 20px;
+  }
+  .carousel-indicators{
+    position: absolute;
+    z-index: 1;
+    color: black;
+  }
+  .carousel-indicators>button{
+    color: black;
+  }
+  .carousel-item-sec-4{
+    height: auto;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .carousel-inner-sec-4{
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+  }
+  .client-photo-container{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .client-photo-container>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .client-name-container{
+    border: 1px solid black;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .rating{
+    margin: auto;
+    height: 50px;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .star-image-container{
+    height: 30px;
+    width: auto;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .star-image{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+  .star-image>img{
+    height: 100%;
+    width: 100%;
+  }
+  .client-review-para{
+    font-family: "Montserrat",sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size:20px ;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+/********************************************Footer***********************************/
+footer {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-items-container {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.footer-item {
+    padding-left: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.heading-footer {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: underline;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.sideline {
+    margin-top: 7px;
+    margin-left: 5px;
+    height: 1px;
+    width: 15px;
+    background-color: white;
+}
+
+.links {
+    font-size: 19px;
+    margin-top: 5px;
+    color: white;
+
+}
+
+.links:hover {
+    cursor: pointer;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-handshake {
+    margin-right: 10px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(226, 226, 226);
+}
+
+.copyright-footer {
+    font-size: 21px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.s-heading {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icons-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+}
+
+.icons-social-media>a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone-number {
+    font-size: 20px;
+    font-family: "Lexend Exa", sans-serif;
+}
+
+
+
+/********************************************MEDIA QUERY FOR TAB********************************************/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-s-p1 {
+        display: none;
+    }
+
+    .nav-s-p2 {
+        display: flex;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .control-buttons {
+        display: flex;
+    }
+
+    footer {
+        padding-right: 0px;
+        padding-left: 10px;
+
+    }
+
+    .footer-items-container {
+        width: 100%;
+        margin: 0;
+        justify-content: start;
+    }
+
+    .footer-item {
+        width: 270px;
+        padding-left: 50px;
+    }
+
+    .lastone {
+        margin-top: 50px;
+        width: 290px;
+        height: 200px;
+    }
+
+    .lastone>.links:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .links>.fa-solid {
+        font-size: 17px;
+    }
+    .social-media {
+        width: 32%;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: 50px;
+    }
+    .s-heading {
+        margin-left: 50px;
+        text-align: left;
+        font-size: 25px;
+    }
+
+    .copyright-footer {
+        text-align: center;
+    }
+
+}
+
+/********************************************MEDIA QUERY FOR MOBILE********************************************/
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+    header {
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-s-p1 {
+        display: none;
+    }
+
+    .nav-s-p2 {
+        display: flex;
+        width: 50px;
+    }
+
+    .nav-p1 {
+        width: 160px;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .control-buttons {
+        display: flex;
+    }
+
+    .detail-service {
+        font-size: 35px;
+    }
+
+    .detailed-service {
+        font-size: 23px;
+    }
+
+    .text-container {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 27px;
+    }
+    .client-review-para{
+        font-size: 15px;
+      }
+    .heading{
+        font-size:33px ;
+    }
+    
+    .footer-item {
+        width: 350px;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+
+    .heading-footer {
+        font-size: 23px;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+
+    .social-media {
+        width: 90%;
+    }
+
+    .lastone {
+        margin-top: 0;
+        height: 200px;
+    }
+
+    .copyright-footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+}
